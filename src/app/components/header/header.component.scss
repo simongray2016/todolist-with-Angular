@@ -1,0 +1,26 @@
+.header {
+  border-bottom: 1px solid #e6e6e6;
+  .icon-wrapper {
+    font-size: 40px;
+    color: darken($color: white, $amount: 20);
+    transition: all 250ms linear;
+    cursor: pointer;
+    visibility: hidden;
+
+    &:hover {
+      color: grey;
+    }
+
+    &.visible {
+      visibility: visible;
+    }
+
+    &.active {
+      color: grey;
+    }
+  }
+}
+
+app-todo-input {
+  width: 100%;
+}

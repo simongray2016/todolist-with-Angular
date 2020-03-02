@@ -1,0 +1,6 @@
+<div class="header d-flex aglign-items-center h-100">
+  <span class="icon-wrapper h-100 text-center pl-1 pt-1" [ngClass]="{visible: hasTodo$ | async, active: isAllCompleted$ | async}">
+    <i class="eva eva-chevron-down-outline" (click)="toggleAll()"></i>
+  </span>
+  <app-todo-input></app-todo-input>
+</div>

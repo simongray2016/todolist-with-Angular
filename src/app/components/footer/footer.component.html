@@ -1,0 +1,14 @@
+<div class="footer d-flex justify-content-between align-items-center">
+  <div class="items-count">{{length}} {{length > 1 ? 'items' : 'item'}} left</div>
+  <div class="filter d-flex justify-content-center aglign-items-center" >
+    <button
+      class="filter-btn"
+      *ngFor="let btn of filterButton"
+      [ngClass]="{'active': btn.isActive}"
+      (click)="filter(btn.type)"
+    >
+      {{btn.label}}
+    </button>
+  </div>
+  <button class="clear-btn" [ngClass]="{'visible': hasComplete$ | async}" (click)="clearCompleted()">Clear completed</button>
+</div>

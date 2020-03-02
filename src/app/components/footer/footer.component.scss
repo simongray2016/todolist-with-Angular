@@ -1,0 +1,48 @@
+.footer {
+  font-size: 14px;
+  color: #777777;
+  padding: 10px 15px;
+  .filter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    &-btn {
+      font-size: 14px;
+      color: #777777;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      padding: 3px 7px;
+      margin: 3px;
+      background: transparent;
+      outline: none;
+      transition: all 250ms linear;
+
+      &:hover {
+        border-color: rgba(175, 47, 47, 0.25)
+      }
+    }
+    .active {
+      border-color: rgba(175, 47, 47, 0.45)
+    }
+  }
+  .clear-btn {
+    font-size: 14px;
+    color: #777777;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 3px 7px;
+    margin: 3px;
+    background: transparent;
+    outline: none;
+    z-index: 1;
+    visibility: hidden;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.visible {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+input {
+  outline: none;
+  border: none;
+  font-size: 24px;
+  padding: 16px;
+  color: lighten($color: black, $amount: 40);
+  &::placeholder {
+    font-style: italic;
+    color: darken($color: white, $amount: 20);
+  }
+}
